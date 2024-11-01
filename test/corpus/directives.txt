@@ -41,7 +41,8 @@ account Assets:Bank
       (account_directive
         (account)
         (account_subdirective
-          (note_subdirective))))))
+          (note_subdirective
+            (value)))))))
 
 ================================================================================
 commodity with format
@@ -107,8 +108,10 @@ tag Receipt
   (journal_item
     (directive
       (tag_directive
-        (check_subdirective)
-        (assert_subdirective)))))
+        (check_subdirective
+          (value))
+        (assert_subdirective
+          (value))))))
 
 ================================================================================
 multiple directives
@@ -291,4 +294,5 @@ invalid directive, because it's indented
 
 (source_file
   (ERROR
-    (char_directive (account))))
+    (char_directive
+      (account))))

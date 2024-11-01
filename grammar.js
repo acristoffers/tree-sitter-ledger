@@ -352,7 +352,7 @@ function argumentDirective($, argument) {
             $.whitespace,
             argument,
             $.whitespace,
-            /.+\n/,
+            alias(/.+\n/, $.value),
     )
 }
 

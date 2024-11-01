@@ -502,8 +502,13 @@
                 "name": "whitespace"
               },
               {
-                "type": "PATTERN",
-                "value": ".+\\n"
+                "type": "ALIAS",
+                "content": {
+                  "type": "PATTERN",
+                  "value": ".+\\n"
+                },
+                "named": true,
+                "value": "value"
               }
             ]
           },
@@ -528,8 +533,13 @@
                 "name": "whitespace"
               },
               {
-                "type": "PATTERN",
-                "value": ".+\\n"
+                "type": "ALIAS",
+                "content": {
+                  "type": "PATTERN",
+                  "value": ".+\\n"
+                },
+                "named": true,
+                "value": "value"
               }
             ]
           },
@@ -950,8 +960,13 @@
           "name": "whitespace"
         },
         {
-          "type": "PATTERN",
-          "value": ".+\\n"
+          "type": "ALIAS",
+          "content": {
+            "type": "PATTERN",
+            "value": ".+\\n"
+          },
+          "named": true,
+          "value": "value"
         }
       ]
     },
@@ -1009,8 +1024,13 @@
           "name": "whitespace"
         },
         {
-          "type": "PATTERN",
-          "value": ".+\\n"
+          "type": "ALIAS",
+          "content": {
+            "type": "PATTERN",
+            "value": ".+\\n"
+          },
+          "named": true,
+          "value": "value"
         }
       ]
     },
@@ -1030,8 +1050,13 @@
           "name": "whitespace"
         },
         {
-          "type": "PATTERN",
-          "value": ".+\\n"
+          "type": "ALIAS",
+          "content": {
+            "type": "PATTERN",
+            "value": ".+\\n"
+          },
+          "named": true,
+          "value": "value"
         }
       ]
     },
@@ -1051,8 +1076,13 @@
           "name": "whitespace"
         },
         {
-          "type": "PATTERN",
-          "value": ".+\\n"
+          "type": "ALIAS",
+          "content": {
+            "type": "PATTERN",
+            "value": ".+\\n"
+          },
+          "named": true,
+          "value": "value"
         }
       ]
     },

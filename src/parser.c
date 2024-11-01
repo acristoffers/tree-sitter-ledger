@@ -181,7 +181,7 @@ static const char * const ts_symbol_names[] = {
   [aux_sym_option_value_token1] = "option_value_token1",
   [anon_sym_account] = "account",
   [anon_sym_eval] = "eval_subdirective",
-  [aux_sym_account_subdirective_token1] = "account_subdirective_token1",
+  [aux_sym_account_subdirective_token1] = "value",
   [anon_sym_payee] = "payee_subdirective",
   [anon_sym_commodity] = "commodity",
   [anon_sym_nomarket] = "nomarket",
@@ -514,8 +514,8 @@ static const TSSymbolMetadata ts_symbol_metadata[] = {
     .named = true,
   },
   [aux_sym_account_subdirective_token1] = {
-    .visible = false,
-    .named = false,
+    .visible = true,
+    .named = true,
   },
   [anon_sym_payee] = {
     .visible = true,
@@ -1019,12 +1019,10 @@ static const TSSymbol ts_alias_sequences[PRODUCTION_ID_COUNT][MAX_ALIAS_SEQUENCE
   [3] = {
     [0] = anon_sym_eval,
     [2] = anon_sym_eval,
-    [3] = anon_sym_eval,
   },
   [4] = {
     [0] = anon_sym_payee,
     [2] = anon_sym_payee,
-    [3] = anon_sym_payee,
   },
 };
 

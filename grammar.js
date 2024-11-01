@@ -58,8 +58,8 @@ module.exports = grammar({
             $.note_subdirective,
             $.assert_subdirective,
             $.check_subdirective,
-            argumentDirective($, 'eval'),
-            argumentDirective($, 'payee'),
+            alias(argumentDirective($, 'eval'), $.eval_subdirective),
+            alias(argumentDirective($, 'payee'), $.payee_subdirective),
         ),
 
         commodity_directive: $ => seq(

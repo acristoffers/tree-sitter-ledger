@@ -28,8 +28,8 @@
     "named": true,
     "fields": {},
     "children": {
-      "multiple": false,
-      "required": false,
+      "multiple": true,
+      "required": true,
       "types": [
         {
           "type": "alias_subdirective",
@@ -48,7 +48,15 @@
           "named": true
         },
         {
+          "type": "eval_subdirective",
+          "named": true
+        },
+        {
           "type": "note_subdirective",
+          "named": true
+        },
+        {
+          "type": "payee_subdirective",
           "named": true
         }
       ]
@@ -787,8 +795,8 @@
     "named": false
   },
   {
-    "type": "eval",
-    "named": false
+    "type": "eval_subdirective",
+    "named": true
   },
   {
     "type": "format",
@@ -816,10 +824,10 @@
   },
   {
     "type": "payee",
-    "named": false
+    "named": true
   },
   {
-    "type": "payee",
+    "type": "payee_subdirective",
     "named": true
   },
   {

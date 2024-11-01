@@ -485,46 +485,56 @@
           "name": "check_subdirective"
         },
         {
-          "type": "SEQ",
-          "members": [
-            {
-              "type": "SYMBOL",
-              "name": "whitespace"
-            },
-            {
-              "type": "STRING",
-              "value": "eval"
-            },
-            {
-              "type": "SYMBOL",
-              "name": "whitespace"
-            },
-            {
-              "type": "PATTERN",
-              "value": ".+\\n"
-            }
-          ]
+          "type": "ALIAS",
+          "content": {
+            "type": "SEQ",
+            "members": [
+              {
+                "type": "SYMBOL",
+                "name": "whitespace"
+              },
+              {
+                "type": "STRING",
+                "value": "eval"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "whitespace"
+              },
+              {
+                "type": "PATTERN",
+                "value": ".+\\n"
+              }
+            ]
+          },
+          "named": true,
+          "value": "eval_subdirective"
         },
         {
-          "type": "SEQ",
-          "members": [
-            {
-              "type": "SYMBOL",
-              "name": "whitespace"
-            },
-            {
-              "type": "STRING",
-              "value": "payee"
-            },
-            {
-              "type": "SYMBOL",
-              "name": "whitespace"
-            },
-            {
-              "type": "PATTERN",
-              "value": ".+\\n"
-            }
-          ]
+          "type": "ALIAS",
+          "content": {
+            "type": "SEQ",
+            "members": [
+              {
+                "type": "SYMBOL",
+                "name": "whitespace"
+              },
+              {
+                "type": "STRING",
+                "value": "payee"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "whitespace"
+              },
+              {
+                "type": "PATTERN",
+                "value": ".+\\n"
+              }
+            ]
+          },
+          "named": true,
+          "value": "payee_subdirective"
         }
       ]
     },
@@ -2240,4 +2250,3 @@
   ],
   "supertypes": []
 }
-

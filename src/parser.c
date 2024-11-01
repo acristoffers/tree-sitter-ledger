@@ -189,7 +189,7 @@ static const char * const ts_symbol_names[] = {
   [anon_sym_commodity] = "commodity",
   [anon_sym_nomarket] = "nomarket",
   [anon_sym_tag] = "tag",
-  [aux_sym_tag_directive_token1] = "tag_directive_token1",
+  [aux_sym_tag_directive_token1] = "tag",
   [anon_sym_include] = "include",
   [anon_sym_alias] = "alias",
   [aux_sym_word_directive_token1] = "word_directive_token1",
@@ -543,8 +543,8 @@ static const TSSymbolMetadata ts_symbol_metadata[] = {
     .named = false,
   },
   [aux_sym_tag_directive_token1] = {
-    .visible = false,
-    .named = false,
+    .visible = true,
+    .named = true,
   },
   [anon_sym_include] = {
     .visible = true,

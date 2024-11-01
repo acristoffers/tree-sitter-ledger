@@ -653,7 +653,7 @@
     "fields": {},
     "children": {
       "multiple": true,
-      "required": false,
+      "required": true,
       "types": [
         {
           "type": "assert_subdirective",
@@ -661,6 +661,10 @@
         },
         {
           "type": "check_subdirective",
+          "named": true
+        },
+        {
+          "type": "tag",
           "named": true
         }
       ]
@@ -843,11 +847,11 @@
   },
   {
     "type": "comment",
-    "named": true
+    "named": false
   },
   {
     "type": "comment",
-    "named": false
+    "named": true
   },
   {
     "type": "commodity",
@@ -903,14 +907,18 @@
   },
   {
     "type": "payee",
-    "named": false
-  },
-  {
-    "type": "payee",
     "named": true
   },
   {
+    "type": "payee",
+    "named": false
+  },
+  {
     "type": "query",
+    "named": true
+  },
+  {
+    "type": "tag",
     "named": true
   },
   {

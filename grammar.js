@@ -81,7 +81,7 @@ module.exports = grammar({
         nomarket_subdirective: $ => singleKeywordDirective($, 'nomarket'),
 
         tag_directive: $ => seq(
-            seq('tag', $.whitespace, /\p{L}+\n/),
+            seq('tag', $.whitespace, alias(/\p{L}+\n/, $.tag)),
             repeat(choice(
                 $.assert_subdirective,
                 $.check_subdirective,

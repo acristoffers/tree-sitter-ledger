@@ -89,10 +89,12 @@ tag CSV
 (source_file
   (journal_item
     (directive
-      (tag_directive)))
+      (tag_directive
+        (tag))))
   (journal_item
     (directive
-      (tag_directive))))
+      (tag_directive
+        (tag)))))
 
 ================================================================================
 multiple lines tag
@@ -108,6 +110,7 @@ tag Receipt
   (journal_item
     (directive
       (tag_directive
+        (tag)
         (check_subdirective
           (value))
         (assert_subdirective

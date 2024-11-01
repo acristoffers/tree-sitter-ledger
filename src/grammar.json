@@ -636,8 +636,13 @@
               "name": "whitespace"
             },
             {
-              "type": "PATTERN",
-              "value": "\\p{L}+\\n"
+              "type": "ALIAS",
+              "content": {
+                "type": "PATTERN",
+                "value": "\\p{L}+\\n"
+              },
+              "named": true,
+              "value": "tag"
             }
           ]
         },

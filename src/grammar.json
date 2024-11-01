@@ -599,21 +599,25 @@
           "name": "note_subdirective"
         },
         {
-          "type": "SEQ",
-          "members": [
-            {
-              "type": "SYMBOL",
-              "name": "whitespace"
-            },
-            {
-              "type": "STRING",
-              "value": "nomarket"
-            },
-            {
-              "type": "STRING",
-              "value": "\n"
-            }
-          ]
+          "type": "SYMBOL",
+          "name": "nomarket_subdirective"
+        }
+      ]
+    },
+    "nomarket_subdirective": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "SYMBOL",
+          "name": "whitespace"
+        },
+        {
+          "type": "STRING",
+          "value": "nomarket"
+        },
+        {
+          "type": "STRING",
+          "value": "\n"
         }
       ]
     },

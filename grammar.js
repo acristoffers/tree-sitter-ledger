@@ -75,8 +75,10 @@ module.exports = grammar({
             $.default_subdirective,
             $.format_subdirective,
             $.note_subdirective,
-            singleKeywordDirective($, 'nomarket'),
+            $.nomarket_subdirective,
         ),
+
+        nomarket_subdirective: $ => singleKeywordDirective($, 'nomarket'),
 
         tag_directive: $ => seq(
             seq('tag', $.whitespace, /\p{L}+\n/),

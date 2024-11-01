@@ -289,7 +289,7 @@
     "fields": {},
     "children": {
       "multiple": false,
-      "required": false,
+      "required": true,
       "types": [
         {
           "type": "alias_subdirective",
@@ -301,6 +301,10 @@
         },
         {
           "type": "format_subdirective",
+          "named": true
+        },
+        {
+          "type": "nomarket_subdirective",
           "named": true
         },
         {
@@ -433,6 +437,11 @@
   },
   {
     "type": "negative_quantity",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "nomarket_subdirective",
     "named": true,
     "fields": {}
   },

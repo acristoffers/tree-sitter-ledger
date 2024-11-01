@@ -680,7 +680,7 @@
     "named": true,
     "fields": {},
     "children": {
-      "multiple": false,
+      "multiple": true,
       "required": false,
       "types": [
         {
@@ -689,6 +689,14 @@
         },
         {
           "type": "filename",
+          "named": true
+        },
+        {
+          "type": "name",
+          "named": true
+        },
+        {
+          "type": "value",
           "named": true
         }
       ]
@@ -894,6 +902,10 @@
     "named": false
   },
   {
+    "type": "name",
+    "named": true
+  },
+  {
     "type": "nomarket",
     "named": false
   },
@@ -919,11 +931,11 @@
   },
   {
     "type": "tag",
-    "named": true
+    "named": false
   },
   {
     "type": "tag",
-    "named": false
+    "named": true
   },
   {
     "type": "test",

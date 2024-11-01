@@ -75,7 +75,9 @@ alias NewName=Assets:Bank Account
 (source_file
   (journal_item
     (directive
-      (word_directive))))
+      (word_directive
+        (name)
+        (value)))))
 
 ================================================================================
 single line tags
@@ -137,7 +139,9 @@ alias NewName=Assets:Bank Account
         (filename))))
   (journal_item
     (directive
-      (word_directive))))
+      (word_directive
+        (name)
+        (value)))))
 
 ================================================================================
 time directives
@@ -203,7 +207,8 @@ year 2021
       (char_directive)))
   (journal_item
     (directive
-      (word_directive))))
+      (word_directive
+        (value)))))
 
 ================================================================================
 bucket directives

@@ -89,28 +89,12 @@ module.exports = grammar({
         ),
 
         word_directive: $ => choice(
-            seq(
-                'include',
-                $.whitespace,
-                $.filename,
-            ),
             'end',
-            seq('alias', $.whitespace, /[^=]+/, '=', /.+/),
-            seq(
-                'def',
-                $.whitespace,
-                /.+/,
-            ),
-            seq(
-                'year',
-                $.whitespace,
-                /\d{4}/,
-            ),
-            seq(
-                'bucket',
-                $.whitespace,
-                $.account,
-            ),
+            seq('include', $.whitespace, $.filename),
+            seq('alias', $.whitespace, alias(/[^=]+/, $.name), '=', alias(/.+/, $.value)),
+            seq('def', $.whitespace, alias(/.+/, $.value)),
+            seq('year', $.whitespace, alias(/\d{4}/, $.value)),
+            seq('bucket', $.whitespace, $.account) ,
         ),
 
         filename: $ => /.+/,

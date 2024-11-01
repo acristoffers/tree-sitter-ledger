@@ -485,66 +485,64 @@
           "name": "check_subdirective"
         },
         {
-          "type": "ALIAS",
-          "content": {
-            "type": "SEQ",
-            "members": [
-              {
-                "type": "SYMBOL",
-                "name": "whitespace"
-              },
-              {
-                "type": "STRING",
-                "value": "eval"
-              },
-              {
-                "type": "SYMBOL",
-                "name": "whitespace"
-              },
-              {
-                "type": "ALIAS",
-                "content": {
-                  "type": "PATTERN",
-                  "value": ".+\\n"
-                },
-                "named": true,
-                "value": "value"
-              }
-            ]
-          },
-          "named": true,
-          "value": "eval_subdirective"
+          "type": "SYMBOL",
+          "name": "eval_subdirective"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "payee_subdirective"
+        }
+      ]
+    },
+    "eval_subdirective": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "SYMBOL",
+          "name": "whitespace"
+        },
+        {
+          "type": "STRING",
+          "value": "eval"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "whitespace"
         },
         {
           "type": "ALIAS",
           "content": {
-            "type": "SEQ",
-            "members": [
-              {
-                "type": "SYMBOL",
-                "name": "whitespace"
-              },
-              {
-                "type": "STRING",
-                "value": "payee"
-              },
-              {
-                "type": "SYMBOL",
-                "name": "whitespace"
-              },
-              {
-                "type": "ALIAS",
-                "content": {
-                  "type": "PATTERN",
-                  "value": ".+\\n"
-                },
-                "named": true,
-                "value": "value"
-              }
-            ]
+            "type": "PATTERN",
+            "value": ".+\\n"
           },
           "named": true,
-          "value": "payee_subdirective"
+          "value": "value"
+        }
+      ]
+    },
+    "payee_subdirective": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "SYMBOL",
+          "name": "whitespace"
+        },
+        {
+          "type": "STRING",
+          "value": "payee"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "whitespace"
+        },
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PATTERN",
+            "value": ".+\\n"
+          },
+          "named": true,
+          "value": "value"
         }
       ]
     },
